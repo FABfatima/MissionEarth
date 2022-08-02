@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2F51F12899A40400ED26B7 /* globalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F51F02899A40400ED26B7 /* globalVariables.swift */; };
 		BD46E0C9289824E500D04B12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46E0C8289824E500D04B12 /* AppDelegate.swift */; };
 		BD46E0CB289824E500D04B12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46E0CA289824E500D04B12 /* SceneDelegate.swift */; };
 		BD46E0CD289824E500D04B12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46E0CC289824E500D04B12 /* ViewController.swift */; };
@@ -17,6 +18,10 @@
 		BD46E0E3289824E900D04B12 /* MissionEarth1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46E0E2289824E900D04B12 /* MissionEarth1Tests.swift */; };
 		BD46E0ED289824E900D04B12 /* MissionEarth1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46E0EC289824E900D04B12 /* MissionEarth1UITests.swift */; };
 		BD46E0EF289824E900D04B12 /* MissionEarth1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46E0EE289824E900D04B12 /* MissionEarth1UITestsLaunchTests.swift */; };
+		BD7EF6442899905F00CEEE18 /* ViewControllerMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7EF6432899905F00CEEE18 /* ViewControllerMissions.swift */; };
+		BD7EF6462899908100CEEE18 /* ViewControllerMission1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7EF6452899908100CEEE18 /* ViewControllerMission1.swift */; };
+		BD7EF6482899909A00CEEE18 /* ViewControllerMission2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7EF6472899909A00CEEE18 /* ViewControllerMission2.swift */; };
+		BD7EF64A289990AF00CEEE18 /* ViewControllerMission3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7EF649289990AF00CEEE18 /* ViewControllerMission3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD2F51F02899A40400ED26B7 /* globalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVariables.swift; sourceTree = "<group>"; };
 		BD46E0C5289824E500D04B12 /* MissionEarth1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissionEarth1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD46E0C8289824E500D04B12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD46E0CA289824E500D04B12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,10 @@
 		BD46E0E8289824E900D04B12 /* MissionEarth1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MissionEarth1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD46E0EC289824E900D04B12 /* MissionEarth1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionEarth1UITests.swift; sourceTree = "<group>"; };
 		BD46E0EE289824E900D04B12 /* MissionEarth1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionEarth1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD7EF6432899905F00CEEE18 /* ViewControllerMissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMissions.swift; sourceTree = "<group>"; };
+		BD7EF6452899908100CEEE18 /* ViewControllerMission1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMission1.swift; sourceTree = "<group>"; };
+		BD7EF6472899909A00CEEE18 /* ViewControllerMission2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMission2.swift; sourceTree = "<group>"; };
+		BD7EF649289990AF00CEEE18 /* ViewControllerMission3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMission3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,11 @@
 				BD46E0CA289824E500D04B12 /* SceneDelegate.swift */,
 				BD46E0CC289824E500D04B12 /* ViewController.swift */,
 				BD46E0CE289824E500D04B12 /* Main.storyboard */,
+				BD7EF6452899908100CEEE18 /* ViewControllerMission1.swift */,
+				BD7EF6472899909A00CEEE18 /* ViewControllerMission2.swift */,
+				BD7EF649289990AF00CEEE18 /* ViewControllerMission3.swift */,
+				BD7EF6432899905F00CEEE18 /* ViewControllerMissions.swift */,
+				BD2F51F02899A40400ED26B7 /* globalVariables.swift */,
 				BD46E0D4289824E900D04B12 /* Assets.xcassets */,
 				BD46E0D6289824E900D04B12 /* LaunchScreen.storyboard */,
 				BD46E0D9289824E900D04B12 /* Info.plist */,
@@ -262,9 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD46E0CD289824E500D04B12 /* ViewController.swift in Sources */,
+				BD7EF6442899905F00CEEE18 /* ViewControllerMissions.swift in Sources */,
 				BD46E0D3289824E500D04B12 /* MissionEarth1.xcdatamodeld in Sources */,
+				BD2F51F12899A40400ED26B7 /* globalVariables.swift in Sources */,
+				BD7EF64A289990AF00CEEE18 /* ViewControllerMission3.swift in Sources */,
+				BD7EF6462899908100CEEE18 /* ViewControllerMission1.swift in Sources */,
 				BD46E0C9289824E500D04B12 /* AppDelegate.swift in Sources */,
 				BD46E0CB289824E500D04B12 /* SceneDelegate.swift in Sources */,
+				BD7EF6482899909A00CEEE18 /* ViewControllerMission2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

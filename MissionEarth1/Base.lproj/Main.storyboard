@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upg-VF-h2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2284.057971014493" y="1163.1696428571429"/>
+            <point key="canvasLocation" x="2284" y="1251"/>
         </scene>
         <!--Money -->
         <scene sceneID="f4Z-No-837">
@@ -164,7 +164,7 @@
         <!--Missions -->
         <scene sceneID="owc-4W-zRT">
             <objects>
-                <viewController id="Xdw-JU-dfQ" sceneMemberID="viewController">
+                <viewController id="Xdw-JU-dfQ" customClass="ViewControllerMissions" customModule="MissionEarth1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tdX-Hu-U2f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,58 +176,128 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEe-KL-pRp">
-                                <rect key="frame" x="86" y="412" width="242" height="127"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sr-j0-6RX">
+                                <rect key="frame" x="85" y="226" width="242" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Mission 2"/>
+                                <buttonConfiguration key="configuration" style="filled" title=""/>
                                 <connections>
-                                    <segue destination="RxO-Mq-2Vo" kind="showDetail" id="8rG-0S-EO6"/>
+                                    <segue destination="RxO-Mq-2Vo" kind="show" id="By9-9q-Bnl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEe-KL-pRp">
+                                <rect key="frame" x="86" y="414" width="242" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title=""/>
+                                <connections>
+                                    <segue destination="ZZe-rh-x70" kind="show" id="mL0-it-MUF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSV-zK-c9v">
-                                <rect key="frame" x="86" y="600" width="242" height="131"/>
+                                <rect key="frame" x="85" y="604" width="242" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Mission 3"/>
+                                <buttonConfiguration key="configuration" style="filled" title=""/>
                                 <connections>
-                                    <segue destination="RxO-Mq-2Vo" kind="show" id="pF0-gn-2W2"/>
+                                    <segue destination="KxD-xl-C5u" kind="show" id="YPT-lo-Rpb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sr-j0-6RX">
-                                <rect key="frame" x="85" y="226" width="242" height="139"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geF-3X-NRC">
+                                <rect key="frame" x="103" y="432" width="206" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Mission 1"/>
-                                <connections>
-                                    <segue destination="RxO-Mq-2Vo" kind="show" id="P1L-Xd-0rr"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2R-wi-5WL">
+                                <rect key="frame" x="103" y="247" width="206" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKy-EW-Td1">
+                                <rect key="frame" x="95" y="610" width="225" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bgl-8z-Mwo"/>
                         <color key="backgroundColor" red="0.79462662970182552" green="0.82428024470554018" blue="0.83794981060606055" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Missions " image="list.bullet.circle" catalog="system" id="lmD-iZ-nz0"/>
+                    <connections>
+                        <outlet property="mission1Text" destination="w2R-wi-5WL" id="0SQ-Op-CC3"/>
+                        <outlet property="missionText2" destination="geF-3X-NRC" id="0GI-O2-yKg"/>
+                        <outlet property="missionText3" destination="TKy-EW-Td1" id="X81-fT-NeG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sey-dE-ftd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2284.057971014493" y="557.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Mission3-->
+        <scene sceneID="dDu-a1-w4G">
+            <objects>
+                <viewController id="KxD-xl-C5u" customClass="ViewControllerMission3" customModule="MissionEarth1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ghl-lf-vIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZTE-J7-8XT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g0g-8p-YYC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3BG-Mb-SSG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2635" y="-141"/>
+        </scene>
+        <!--View Controller Mission2-->
+        <scene sceneID="C0B-dG-Bz0">
+            <objects>
+                <viewController id="ZZe-rh-x70" customClass="ViewControllerMission2" customModule="MissionEarth1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mQG-XD-hgb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="R8o-Ri-UFy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ref-9l-7KQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmK-gU-S5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3919" y="920"/>
+        </scene>
+        <!--View Controller Mission1-->
         <scene sceneID="zMk-Yr-CSM">
             <objects>
-                <viewController id="RxO-Mq-2Vo" sceneMemberID="viewController">
+                <viewController id="RxO-Mq-2Vo" customClass="ViewControllerMission1" customModule="MissionEarth1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="za7-B9-Lpy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Is a Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWA-bT-Q7b">
+                                <rect key="frame" x="99" y="190" width="266" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PJK-e9-AjP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bmN-LH-yML"/>
+                    <connections>
+                        <outlet property="m1Text" destination="PWA-bT-Q7b" id="86o-kz-GBO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdT-13-116" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3112" y="263"/>
+            <point key="canvasLocation" x="3356.521739130435" y="238.39285714285714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G1P-EN-O71">
@@ -250,9 +320,6 @@
             <point key="canvasLocation" x="1395" y="860"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="8rG-0S-EO6"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.seal.fill" catalog="system" width="128" height="128"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
