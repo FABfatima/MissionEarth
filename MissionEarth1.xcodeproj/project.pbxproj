@@ -22,6 +22,9 @@
 		BD7EF6462899908100CEEE18 /* ViewControllerMission1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7EF6452899908100CEEE18 /* ViewControllerMission1.swift */; };
 		BD7EF6482899909A00CEEE18 /* ViewControllerMission2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7EF6472899909A00CEEE18 /* ViewControllerMission2.swift */; };
 		BD7EF64A289990AF00CEEE18 /* ViewControllerMission3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7EF649289990AF00CEEE18 /* ViewControllerMission3.swift */; };
+		BDBFE0BF289ACC3400398B47 /* ViewControllerMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFE0BE289ACC3300398B47 /* ViewControllerMoney.swift */; };
+		BDBFE0C1289AE61100398B47 /* LeaderBoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFE0C0289AE61100398B47 /* LeaderBoardTableViewController.swift */; };
+		BDBFE0C3289AE64F00398B47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBFE0C2289AE64F00398B47 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		BD7EF6452899908100CEEE18 /* ViewControllerMission1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMission1.swift; sourceTree = "<group>"; };
 		BD7EF6472899909A00CEEE18 /* ViewControllerMission2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMission2.swift; sourceTree = "<group>"; };
 		BD7EF649289990AF00CEEE18 /* ViewControllerMission3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMission3.swift; sourceTree = "<group>"; };
+		BDBFE0BE289ACC3300398B47 /* ViewControllerMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMoney.swift; sourceTree = "<group>"; };
+		BDBFE0C0289AE61100398B47 /* LeaderBoardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewController.swift; sourceTree = "<group>"; };
+		BDBFE0C2289AE64F00398B47 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,9 @@
 				BD46E0CA289824E500D04B12 /* SceneDelegate.swift */,
 				BD46E0CC289824E500D04B12 /* ViewController.swift */,
 				BD46E0CE289824E500D04B12 /* Main.storyboard */,
+				BDBFE0C2289AE64F00398B47 /* User.swift */,
+				BDBFE0C0289AE61100398B47 /* LeaderBoardTableViewController.swift */,
+				BDBFE0BE289ACC3300398B47 /* ViewControllerMoney.swift */,
 				BD7EF6452899908100CEEE18 /* ViewControllerMission1.swift */,
 				BD7EF6472899909A00CEEE18 /* ViewControllerMission2.swift */,
 				BD7EF649289990AF00CEEE18 /* ViewControllerMission3.swift */,
@@ -279,10 +288,13 @@
 				BD46E0CD289824E500D04B12 /* ViewController.swift in Sources */,
 				BD7EF6442899905F00CEEE18 /* ViewControllerMissions.swift in Sources */,
 				BD46E0D3289824E500D04B12 /* MissionEarth1.xcdatamodeld in Sources */,
+				BDBFE0C1289AE61100398B47 /* LeaderBoardTableViewController.swift in Sources */,
 				BD2F51F12899A40400ED26B7 /* globalVariables.swift in Sources */,
 				BD7EF64A289990AF00CEEE18 /* ViewControllerMission3.swift in Sources */,
 				BD7EF6462899908100CEEE18 /* ViewControllerMission1.swift in Sources */,
 				BD46E0C9289824E500D04B12 /* AppDelegate.swift in Sources */,
+				BDBFE0C3289AE64F00398B47 /* User.swift in Sources */,
+				BDBFE0BF289ACC3400398B47 /* ViewControllerMoney.swift in Sources */,
 				BD46E0CB289824E500D04B12 /* SceneDelegate.swift in Sources */,
 				BD7EF6482899909A00CEEE18 /* ViewControllerMission2.swift in Sources */,
 			);
@@ -463,6 +475,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MissionEarth1/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mission Earth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -490,6 +503,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MissionEarth1/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mission Earth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

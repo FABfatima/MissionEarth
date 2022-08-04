@@ -25,15 +25,18 @@ class ViewControllerMissions: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        mission1 = missions.randomElement()!
+        //mission1 = missions.randomElement()!
+        mission1 = "Use your own reusable bag"
         mission1Text.text = mission1
         
         
-        mission2 = missions.randomElement()!
+        //mission2 = missions.randomElement()!
+        mission2 = "Take a bike/walk to your destination"
         missionText2.text = mission2
         
         
-        mission3 = missions.randomElement()!
+        //mission3 = missions.randomElement()!
+        mission3 = "resell your clothing to a resale shop or thrift store"
         missionText3.text = mission3
         
         

@@ -9,42 +9,132 @@ import UIKit
 
 class ViewControllerMission3: UIViewController {
 
-    @IBOutlet weak var infoLabel: UILabel!
+    
+    @IBOutlet weak var infoLabel2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         if mission2 == missions[0]{
-            infoLabel.text = reusableBagMessage
+            infoLabel2.text = reusableBagMessage
             
         } else if mission2 == missions[1]{
-            infoLabel.text = shorterShowerMessage
+            infoLabel2.text = shorterShowerMessage
             
         } else if mission2 == missions[2]{
-            infoLabel.text = turnOffLightsMessage
+            infoLabel2.text = turnOffLightsMessage
              
         } else if mission2 == missions[3]{
-            infoLabel.text = plasticBottlesMessage
+            infoLabel2.text = plasticBottlesMessage
             
         }else if mission2 == missions[4]{
-                infoLabel.text = resellClothesMessage
+                infoLabel2.text = resellClothesMessage
             
         }else if mission2 == missions[5]{
-            infoLabel.text = eatLeftOversMessage
+            infoLabel2.text = eatLeftOversMessage
             
         }else if mission2 == missions[6]{
-            infoLabel.text = reusableWaterBottleMessage
+            infoLabel2.text = reusableWaterBottleMessage
             
         }else if mission2 == missions[7]{
-                    infoLabel.text = saveHeatandAirMessage
+                    infoLabel2.text = saveHeatandAirMessage
             
         }else if mission2 == missions[8]{
-            infoLabel.text = dontEatMeatMessage
+            infoLabel2.text = dontEatMeatMessage
             
         }else if mission2 == missions[9]{
-            infoLabel.text = takeABikeMessage
+            infoLabel2.text = takeABikeMessage
         
+        }
+        
+        
+    }
+        
+        @IBAction func finishSwitch(_ sender: Any) {
+            
+        
+            
+            
+            var moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+            
+            var okay = UIAlertAction(title: "OK", style: .default, handler: {(action) -> Void in print("Okay button tapped") })
+            
+              
+            
+            if mission1 == missions[0]{
+               money = money + bagMoney
+                missionMoney = 3.0
+                moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+                moneyAlert.addAction(okay)
+                self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[1]{
+               money = money + showerMoney
+               missionMoney = 6.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[2]{
+               money = money + lightsMoney
+               missionMoney = 5.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+                
+           } else if mission1 == missions[3]{
+               money = money + recycleMoney
+               missionMoney = 0.30
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[4]{
+            
+               missionMoney = 10.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               money = money + clothesMoney
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[5]{
+               money = money + leftoversMoney
+               missionMoney = 7.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[6]{
+               money = money + bottleMoney
+               missionMoney = 6.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[7]{
+               money = money + airMoney
+               missionMoney = 4.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[8]{
+               money = money + meatMoney
+               missionMoney = 8.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+           } else if mission1 == missions[9]{
+               money = money + bikeMoney
+               missionMoney = 4.0
+               moneyAlert = UIAlertController(title: "Well Done!", message: "You have completed this challenge and earned $\(missionMoney) dollars!", preferredStyle: .alert)
+               moneyAlert.addAction(okay)
+               self.present(moneyAlert, animated: true, completion: nil)
+               
+               
+               
         }
     }
     
