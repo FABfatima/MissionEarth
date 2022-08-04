@@ -90,7 +90,7 @@ class LeaderBoardTableViewController: UITableViewController {
 
         let user = users[indexPath.row]
         
-       cell.textLabel?.text = "\(user.rank) " + user.name +  " $\(user.amountMoney)"
+       cell.textLabel?.text = "\(user.rank) " + user.name +  " 💸\(user.amountMoney)"
 
         return cell
 
